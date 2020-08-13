@@ -18,13 +18,18 @@ namespace RockPaperScisssorsLizzardSpock
 
 
         //Member Methods 
-        public string AI()
+       
 
+
+        public void SelectGesture()
         {
-            Console.WriteLine("What is your Name:?");
-            playerName = Console.ReadLine();
-            return playerName;
+
         }
+
+
+
+
+
     }
 
 }

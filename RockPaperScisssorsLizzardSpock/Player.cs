@@ -14,5 +14,15 @@ namespace RockPaperScisssorsLizzardSpock
         //Constructor
 
         //Member Methods 
+        public string PLayerName()
+
+        {
+            Console.WriteLine("What is your Name:?");
+            playerName = Console.ReadLine();
+            return playerName;
+        }
+
+
+
     }
 }

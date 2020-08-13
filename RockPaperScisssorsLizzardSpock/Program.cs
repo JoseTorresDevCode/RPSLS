@@ -10,8 +10,8 @@ namespace RockPaperScisssorsLizzardSpock
     {
         static void Main(string[] args)
         {
-            ComputerPlayer aI = new ComputerPlayer();
-            aI.AI();
+            Player playerName = new Player();
+            playerName.PLayerName();
             Console.ReadLine();
         }
     }
