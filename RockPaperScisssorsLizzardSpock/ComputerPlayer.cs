@@ -9,9 +9,22 @@ namespace RockPaperScisssorsLizzardSpock
     class ComputerPlayer
     {
         //Member Variables 
-        string computerName;
+        string playerName;
+        string gesture;
+
+
         //Constructor
 
+
+
         //Member Methods 
+        public string AI()
+
+        {
+            Console.WriteLine("What is your Name:?");
+            playerName = Console.ReadLine();
+            return playerName;
+        }
     }
+
 }

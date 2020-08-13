@@ -10,7 +10,7 @@ namespace RockPaperScisssorsLizzardSpock
     {
         //Member Variables 
         string playerName;
-
+        string gesture;
         //Constructor
 
         //Member Methods 

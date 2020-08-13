@@ -10,6 +10,9 @@ namespace RockPaperScisssorsLizzardSpock
     {
         static void Main(string[] args)
         {
+            ComputerPlayer aI = new ComputerPlayer();
+            aI.AI();
+            Console.ReadLine();
         }
     }
 }

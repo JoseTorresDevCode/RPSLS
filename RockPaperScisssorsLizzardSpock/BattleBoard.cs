@@ -9,8 +9,19 @@ namespace RockPaperScisssorsLizzardSpock
     class BattleBoard
     {
         //Member Variables 
+               //need winner
+               //need score
+               //need rounds
+               //need conclusion
+
+
+
 
         //Constructor
+
+
+
+
 
         //Member Methods 
     }
