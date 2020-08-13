@@ -10,8 +10,11 @@ namespace RockPaperScisssorsLizzardSpock
     {
         //Member Variables 
         string playerName;
+        
         string gesture;
         //Constructor
+
+       
 
         //Member Methods 
         public string PLayerName()
@@ -22,6 +25,13 @@ namespace RockPaperScisssorsLizzardSpock
             return playerName;
         }
 
+        public void MakeGesture(Gestures gestures)
+        {
+            if ()
+            {
+
+            }
+        }
 
 
     }

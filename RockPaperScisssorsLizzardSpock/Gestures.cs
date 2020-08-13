@@ -9,9 +9,16 @@ namespace RockPaperScisssorsLizzardSpock
     class Gestures
     {
         //Member Variables 
-        
+        public string gesture;
         public List<string> gestures;
+        public List<bool> 
         //Constructor
+
+        public Gestures(string gesture)
+        {
+            this.gesture = gesture;
+            
+        }
       
         public Gestures()
         {
@@ -24,9 +31,12 @@ namespace RockPaperScisssorsLizzardSpock
                 gestures.Add("spock");
 
             }
+
+            
         }
 
 
         //Member Methods 
     }
 }
+//Console.WriteLine($"Select Gesture: {gesture.gestures}" );
