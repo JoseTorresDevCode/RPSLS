@@ -32,7 +32,28 @@ namespace RockPaperScisssorsLizzardSpock
             {
                 Console.WriteLine(gesture);
             }
-        }
+            int autoGesture = rand.Next(5);
+            switch(autoGesture)
+            {
+                case 0:
+                    gesture = "rock";
+                    break;
+                case 1:
+                    gesture = "paper";
+                    break;
+                case 2:
+                    gesture = "scissors";
+                    break;
+                case 3:
+                    gesture = "lizzard";
+                    break;
+                case 4:
+                    gesture = "spock";
+                    break;
+
+
+            }
+        }  
 
 
 
