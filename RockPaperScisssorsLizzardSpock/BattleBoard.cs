@@ -45,21 +45,35 @@ namespace RockPaperScisssorsLizzardSpock
             Console.WriteLine("Spock vaporizes Rock, and as always Rock smashes Scissors");
 
         }
-       
-        public void RunGame()
+        public void DeterminePlayer2()
         {
+            Console.WriteLine("Do you want 1 player game or 2 player game? Type 1 or 2");
+            string response = Console.ReadLine();
+            {
+                if (response == "2")
+                {
+                    player2 = new Human();
+                }
+                else
+                {
+                    player2 = new ComputerPlayer();
+                }
 
+            }
+          
         }
-
         public void RoundOne()
         {
             Console.WriteLine("PLease Select a Gesture");
             string response = Console.ReadLine();
-            if ( //plyer selects( list index) this bool true award points - if same redo round 
             {
+                if ()
+                {
 
 
+                }
             }
+
         }
         public void RoundTwo()
         {            // repeat
@@ -70,10 +84,11 @@ namespace RockPaperScisssorsLizzardSpock
 
         }
 
+        public void RunGame()
+        {
+            DisplayRules();
+        }
 
 
-        //delcare winner 
 
-        // end game 
     }
-}

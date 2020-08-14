@@ -11,7 +11,7 @@ namespace RockPaperScisssorsLizzardSpock
     {
         //Member Variables 
         string playerName;
-        string gesture;
+        string gestureChoice;
          
         //Constructor
 
@@ -26,28 +26,34 @@ namespace RockPaperScisssorsLizzardSpock
             return playerName;
         }
 
-        public double MakeGesture(Player playerOneScore,  Player playerTwoScore)
+        public override void SelectGesture()
         {
             
-            Console.WriteLine("please select at gesture");
-            Console.WriteLine("0 = Rock, 1 = Paper, 2 = Scissors, 3 = Lizzard, 4 = Spock");
-            int response = Console.ReadLine();
-            Console.WriteLine("0 = Rock, 1 = Paper, 2 = Scissors, 3 = Lizzard, 4 = Spock");
-            int response2 = Console.ReadLine();
-            if (response > response2)
-            {
-                playerOneScore = 0++;
-            }
-            else if (response < response2)
-            {
-                playerTwoScore = (0++);
-            }
-            else
-            {
-                return MakeGesture();
-            }
         }
+
+        //public int MakeGesture(Player playerOneScore,  Player playerTwoScore)
+        //{
+
+        //Console.WriteLine("please select at gesture");
+        //Console.WriteLine($"0 = Rock, 1 = Paper, 2 = Scissors, 3 = Lizzard, 4 = Spock");
+        //int response = Console.ReadLine();
+        //Console.WriteLine("0 = Rock, 1 = Paper, 2 = Scissors, 3 = Lizzard, 4 = Spock");
+        //int response2 = Console.ReadLine();
+        //if (response > response2)
+        //{
+        //    playerOneScore = 0++;
+        //}
+        //else if (response < response2)
+        //{
+        //    playerTwoScore = (0++);
+        //}
+        //else
+        //{
+        //    return MakeGesture();
+        // }
+        //}
 
 
     }
 }
+ 

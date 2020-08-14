@@ -11,20 +11,21 @@ namespace RockPaperScisssorsLizzardSpock
 
         public string gestureChoice;
         public string score;
-        
-        
-        
-       public Player()
-        {
-            int playerOneScore = 0;
-            int playerTwoScore = 0;
-            
-        }
-           
+        public List<string> gestures;
 
+
+        public Player()
+        {
+            int score = 0;
+            gestures = new List<string>() { "rock", "paper", "scissors", "lizard", "spock" };
             
-        
-       pubic abstract 
+
+        }
+
+
+
+
+        public abstract void SelectGesture();
 
     }
 }

@@ -11,19 +11,27 @@ namespace RockPaperScisssorsLizzardSpock
         //Member Variables 
         string playerName;
         string gesture;
-
+        Random rand;
 
         //Constructor
-
+        public ComputerPlayer()
+        {
+            string Brett = playerName;
+            rand = new Random();
+        }
+        
 
 
         //Member Methods 
        
 
 
-        public void SelectGesture()
+        public override void SelectGesture()
         {
-
+            foreach(string gesture in gestures)
+            {
+                Console.WriteLine(gesture);
+            }
         }
 
 
