@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RockPaperScisssorsLizzardSpock
 {
-    class ComputerPlayer
+    class ComputerPlayer : Player
     {
         //Member Variables 
         string playerName;

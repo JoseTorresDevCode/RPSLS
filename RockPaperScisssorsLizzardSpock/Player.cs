@@ -6,33 +6,25 @@ using System.Threading.Tasks;
 
 namespace RockPaperScisssorsLizzardSpock
 {
-    class Player
+    abstract class Player
     {
-        //Member Variables 
-        string playerName;
+
+        public string gestureChoice;
+        public string score;
         
-        string gesture;
-        //Constructor
-
-       
-
-        //Member Methods 
-        public string PLayerName()
-
+        
+        
+       public Player()
         {
-            Console.WriteLine("What is your Name:?");
-            playerName = Console.ReadLine();
-            return playerName;
+            int playerOneScore = 0;
+            int playerTwoScore = 0;
+            
         }
+           
 
-        public void MakeGesture(Gestures gestures)
-        {
-            if ()
-            {
-
-            }
-        }
-
+            
+        
+       pubic abstract 
 
     }
 }

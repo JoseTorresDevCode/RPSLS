@@ -10,8 +10,13 @@ namespace RockPaperScisssorsLizzardSpock
     {
         static void Main(string[] args)
         {
-            Player playerName = new Player();
-            playerName.PLayerName();
+
+            Human playerName = new Human();
+            playerName.PlayerName();
+
+            BattleBoard runGame = new BattleBoard();
+            runGame.RunGame();
+
             Console.ReadLine();
         }
     }
