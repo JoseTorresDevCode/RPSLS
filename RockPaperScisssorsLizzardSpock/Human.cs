@@ -12,36 +12,45 @@ namespace RockPaperScisssorsLizzardSpock
     {
         //Member Variables 
         string playerName;
-        
-         
+
+
         //Constructor
 
 
 
 
         //Member Methods 
-        public string PlayerName()
+        public override string PlayerName()
         {
-            Console.WriteLine("What is your Name:?");
+            Console.WriteLine("Player One Name:?");
             playerName = Console.ReadLine();
+
             return playerName;
+
         }
 
         public override string SelectGesture()
         {
+            Console.WriteLine($"{playerName} please select a gesture");
             foreach (string gesture in gestures)
             {
+                
                 Console.WriteLine(gesture);
             }
             bool validChoice = false;
             while(validChoice == false) 
             {
                 gesture = Console.ReadLine();
-                if (gesture == "rock" || gesture == "scissors" || gesture == "paper" || gesture == "lizzard" || gesture == "spock")
+                if (gesture == "rock" || gesture == "scissors" || gesture == "paper" || gesture == "lizard" || gesture == "spock")
                 {
                     validChoice = true;
                     Console.WriteLine($"{playerName} chose:" + gesture);
                     
+                }
+                else
+                {
+                    Console.WriteLine("your choice was invalid please choose again");
+                    return SelectGesture();
                 }
             }
             return gesture;
@@ -54,9 +63,9 @@ namespace RockPaperScisssorsLizzardSpock
         //{
 
         //Console.WriteLine("please select at gesture");
-        //Console.WriteLine($"0 = Rock, 1 = Paper, 2 = Scissors, 3 = Lizzard, 4 = Spock");
+        //Console.WriteLine($"0 = Rock, 1 = Paper, 2 = Scissors, 3 = Lizard, 4 = Spock");
         //int response = Console.ReadLine();
-        //Console.WriteLine("0 = Rock, 1 = Paper, 2 = Scissors, 3 = Lizzard, 4 = Spock");
+        //Console.WriteLine("0 = Rock, 1 = Paper, 2 = Scissors, 3 = Lizard, 4 = Spock");
         //int response2 = Console.ReadLine();
         //if (response > response2)
         //{

@@ -16,7 +16,8 @@ namespace RockPaperScisssorsLizzardSpock
         //Constructor
         public ComputerPlayer()
         {
-            playerName = "Brett";
+            
+
             rand = new Random();
         }
         
@@ -45,7 +46,7 @@ namespace RockPaperScisssorsLizzardSpock
                     gesture = "scissors";
                     break;
                 case 3:
-                    gesture = "lizzard";
+                    gesture = "lizard";
                     break;
                 case 4:
                     gesture = "spock";
@@ -53,12 +54,18 @@ namespace RockPaperScisssorsLizzardSpock
 
 
             }
-            Console.WriteLine("Brett Chose" + gesture);
+            Console.WriteLine("player two chose" + " " + gesture);
             Console.ReadLine();
             return gesture;
-        }  
+        }
 
+        public override string PlayerName()
+        {
+            Console.WriteLine("Player Two Name:?");
+            playerName = Console.ReadLine();
 
+            return playerName;
+        }
 
 
 
