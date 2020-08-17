@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -32,11 +33,19 @@ namespace RockPaperScisssorsLizzardSpock
             {
                 Console.WriteLine(gesture);
             }
-            gesture = Console.ReadLine();
-            if (gesture == "rock" || gesture == "scissors" || gesture == "paper" || gesture == "lizzard" || gesture = "spock")
+            bool validChoice = false;
+            while(validChoice == false) 
             {
-                Console.WriteLine(" {PlayerName} chose:" + gesture);
+                gesture = Console.ReadLine();
+                if (gesture == "rock" || gesture == "scissors" || gesture == "paper" || gesture == "lizzard" || gesture == "spock")
+                {
+                    validChoice = true;
+                    Console.WriteLine($"{playerName} chose:" + gesture);
+                    
+                }
             }
+            return gesture;
+
         }
 
 

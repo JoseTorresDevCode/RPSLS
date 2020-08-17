@@ -16,7 +16,7 @@ namespace RockPaperScisssorsLizzardSpock
         //Constructor
         public ComputerPlayer()
         {
-            string Brett = playerName;
+            playerName = "Brett";
             rand = new Random();
         }
         
