@@ -11,9 +11,7 @@ namespace RockPaperScisssorsLizzardSpock
         static void Main(string[] args)
         {
 
-            Human playerName = new Human();
-            playerName.PlayerName();
-
+            
             BattleBoard runGame = new BattleBoard();
             runGame.RunGame();
 

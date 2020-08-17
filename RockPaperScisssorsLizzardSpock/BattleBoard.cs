@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +27,7 @@ namespace RockPaperScisssorsLizzardSpock
         {
             player1 = new Human();
             player2 = new Human();
+           
         }
 
 
@@ -34,16 +36,17 @@ namespace RockPaperScisssorsLizzardSpock
         //Member Methods 
         public void Welcome()
         {
-            Console.WriteLine("Welcome to the Ultimate Battle! Rock, Paper, Scissors, Lizzard, Spock.");
+            Console.WriteLine("Welcome to the Ultimate Battle! Rock, Paper, Scissors, Lizzard, Spock." + " " + "press enter to continue");
+            Console.ReadLine();
         }
         public void DisplayRules()
         {
             Console.WriteLine("Here are the rules!");
             Console.WriteLine("Each Player will select a Gesture");
             Console.WriteLine("Scissors cuts Paper, Paper covers Rock, Rock crushes Lizzard, Lizzard poisons Spock");
-            Console.WriteLine("Spock smashes Scissors, Scissors decapitates Lizzard, Lizzard eats Paper, Papers disproves Rock");
-            Console.WriteLine("Spock vaporizes Rock, and as always Rock smashes Scissors");
-
+            Console.WriteLine("Spock smashes Scissors, Scissors decapitates Lizzard, Lizzard eats Paper, Paper disproves Rock");
+            Console.WriteLine("Spock vaporizes Rock, and as always Rock smashes Scissors!" + " " + "press enter to continue");
+            Console.ReadLine();
         }
         public void DeterminePlayer2()
         {
@@ -63,12 +66,23 @@ namespace RockPaperScisssorsLizzardSpock
 
         }
 
+        public void CompareGestures()
+        {
+
+        }
 
 
         public void RunGame()
         {
+            Welcome();
             DisplayRules();
+            DeterminePlayer2();
+            
+            player1.SelectGesture();
+            player2.SelectGesture();
         }
+
+       
     }
 
 }

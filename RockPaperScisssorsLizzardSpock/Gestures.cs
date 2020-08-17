@@ -19,6 +19,8 @@ namespace RockPaperScisssorsLizzardSpock
         
 
         //Member Methods 
+
+
     }
 }
 //Console.WriteLine($"Select Gesture: {gesture.gestures}" );
