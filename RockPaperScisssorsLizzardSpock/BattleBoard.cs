@@ -60,35 +60,15 @@ namespace RockPaperScisssorsLizzardSpock
                 }
 
             }
-          
-        }
-        public void RoundOne()
-        {
-            Console.WriteLine("PLease Select a Gesture");
-            string response = Console.ReadLine();
-            {
-                if ()
-                {
-
-
-                }
-            }
 
         }
-        public void RoundTwo()
-        {            // repeat
 
-        }
-        public void RoundThree()
-        {           // repeat
 
-        }
 
         public void RunGame()
         {
             DisplayRules();
         }
-
-
-
     }
+
+}

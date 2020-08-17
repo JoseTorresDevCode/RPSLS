@@ -11,7 +11,7 @@ namespace RockPaperScisssorsLizzardSpock
     {
         //Member Variables 
         string playerName;
-        string gestureChoice;
+        
          
         //Constructor
 
@@ -26,10 +26,20 @@ namespace RockPaperScisssorsLizzardSpock
             return playerName;
         }
 
-        public override void SelectGesture()
+        public override string SelectGesture()
         {
-            
+            foreach (string gesture in gestures)
+            {
+                Console.WriteLine(gesture);
+            }
+            gesture = Console.ReadLine();
+            if (gesture == "rock" || gesture == "scissors" || gesture == "paper" || gesture == "lizzard" || gesture = "spock")
+            {
+                Console.WriteLine(" {PlayerName} chose:" + gesture);
+            }
         }
+
+
 
         //public int MakeGesture(Player playerOneScore,  Player playerTwoScore)
         //{

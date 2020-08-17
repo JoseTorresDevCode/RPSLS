@@ -9,7 +9,7 @@ namespace RockPaperScisssorsLizzardSpock
     abstract class Player
     {
 
-        public string gestureChoice;
+        public string gesture;
         public string score;
         public List<string> gestures;
 
@@ -25,7 +25,7 @@ namespace RockPaperScisssorsLizzardSpock
 
 
 
-        public abstract void SelectGesture();
+        public abstract string SelectGesture();
 
     }
 }

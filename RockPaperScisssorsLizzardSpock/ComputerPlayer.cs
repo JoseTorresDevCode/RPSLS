@@ -26,7 +26,7 @@ namespace RockPaperScisssorsLizzardSpock
        
 
 
-        public override void SelectGesture()
+        public override string SelectGesture()
         {
             foreach(string gesture in gestures)
             {
@@ -53,6 +53,9 @@ namespace RockPaperScisssorsLizzardSpock
 
 
             }
+            Console.WriteLine("Brett Chose" + gesture);
+            Console.ReadLine();
+            return gesture;
         }  
 
 
