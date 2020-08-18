@@ -29,7 +29,7 @@ namespace RockPaperScisssorsLizzardSpock
         public BattleBoard()
         {
             player1 = new Human();
-                        
+
         }
 
         //Member Methods 
@@ -55,14 +55,14 @@ namespace RockPaperScisssorsLizzardSpock
                 if (response == "2")
                 {
                     player2 = new Human();
-                    
+
                 }
                 else
                 {
                     player2 = new ComputerPlayer();
-                    
+
                 }
-               
+
             }
 
         }
@@ -85,7 +85,7 @@ namespace RockPaperScisssorsLizzardSpock
             player2.AddScore();
         }
 
-        public void CompareGestures() 
+        public void CompareGestures()
         {
             if (player1.gesture == player2.gesture)
             {
@@ -136,12 +136,12 @@ namespace RockPaperScisssorsLizzardSpock
                 Console.WriteLine($"{player1.playerName}" + " " + "wins this round!");
                 player1.AddScore();
             }
-            else if (player1.gesture == "rock" && player2.gesture == "scissors") 
+            else if (player1.gesture == "rock" && player2.gesture == "scissors")
             {
                 Console.WriteLine($"{player1.playerName}" + " " + "wins this round!");
                 player1.AddScore();
             }
-            
+
             else if (player2.gesture == "scissors" && player1.gesture == "paper")
             {
                 Console.WriteLine($"{player2.playerName}" + " " + "wins this round!");
@@ -192,24 +192,27 @@ namespace RockPaperScisssorsLizzardSpock
                 Console.WriteLine($"{player2.playerName}" + " " + "wins this round!");
                 player2.AddScore();
             }
-            
+
 
         }
 
 
         public void Rounds()
-        {
-            if(player1.score <= 2 || player2.score <= 2)
+        { while (player1.score <= 2 || player2.score <= 2)
             {
-                Console.WriteLine("next round! hit return to continue");
-                Console.ReadLine();
                 Gestures();
                 CompareGestures();
+                if (player1.score <= 2 || player2.score <= 2)
+                {
+                    Console.WriteLine("next round! hit enter to continue");
+                    Console.ReadLine();
+                }
+                else 
+                {
+                    DisplayWinner();
+                }
             }
-            else
-            {
-                DisplayWinner();
-            }
+           
         }
         public void DisplayWinner()
         {
@@ -262,10 +265,10 @@ namespace RockPaperScisssorsLizzardSpock
             DisplayRules();
             DeterminePlayer2();
             SetNames();
-            Gestures();
-            CompareGestures();
             Rounds();
-            DisplayWinner();
+           
+            
+            
             
 
 

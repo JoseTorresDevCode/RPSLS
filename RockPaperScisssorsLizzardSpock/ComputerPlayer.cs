@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -53,7 +54,7 @@ namespace RockPaperScisssorsLizzardSpock
 
 
             }
-            Console.WriteLine($"{playerName} chose" + " " + gesture);
+            Console.WriteLine($"{playerName} chose" + " " + gesture + " " + "-" + "press enter to continue");
             Console.ReadLine();
             return gesture;
         }
@@ -77,7 +78,7 @@ namespace RockPaperScisssorsLizzardSpock
             }
             else
             {
-                Console.WriteLine($"{playerName}'s score is: {score}");
+                Console.WriteLine($"{playerName}'s score is: {score}!" + " " + "-" + "press enter to continue");
                 Console.ReadLine();
                 return score;
             }

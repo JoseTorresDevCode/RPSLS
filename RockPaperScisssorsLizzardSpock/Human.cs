@@ -41,7 +41,7 @@ namespace RockPaperScisssorsLizzardSpock
                 if (gesture == "rock" || gesture == "scissors" || gesture == "paper" || gesture == "lizard" || gesture == "spock")
                 {
                     validChoice = true;                    
-                    Console.WriteLine($"{playerName} chose:" + gesture);
+                    Console.WriteLine($"{playerName} chose:" + gesture );
                     
                 }
                 else
@@ -66,7 +66,7 @@ namespace RockPaperScisssorsLizzardSpock
             }
             else
             {
-                Console.WriteLine($"{playerName}'s score is: {score}");
+                Console.WriteLine($"{playerName}'s score is: {score}!" + " " + "-" + "press enter to continue");
                 Console.ReadLine();
                 return score;
             }
