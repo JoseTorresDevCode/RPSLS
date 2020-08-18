@@ -9,8 +9,7 @@ namespace RockPaperScisssorsLizzardSpock
     class ComputerPlayer : Player
     {
         //Member Variables 
-        string playerName;
-        string gesture;
+        
         Random rand;
 
         //Constructor
@@ -54,7 +53,7 @@ namespace RockPaperScisssorsLizzardSpock
 
 
             }
-            Console.WriteLine("player two chose" + " " + gesture);
+            Console.WriteLine($"{playerName} chose" + " " + gesture);
             Console.ReadLine();
             return gesture;
         }
@@ -67,7 +66,22 @@ namespace RockPaperScisssorsLizzardSpock
             return playerName;
         }
 
-
+        public override int AddScore()
+        {
+            score++;
+            if (score >= 3)
+            {
+                Console.WriteLine($"{playerName}" + " " + "wins");
+                Console.ReadLine();
+                return score;
+            }
+            else
+            {
+                Console.WriteLine($"{playerName}'s score is: {score}");
+                Console.ReadLine();
+                return score;
+            }
+        }
 
     }
 

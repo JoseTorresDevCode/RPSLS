@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Schema;
 
 namespace RockPaperScisssorsLizzardSpock
 {
@@ -10,13 +11,14 @@ namespace RockPaperScisssorsLizzardSpock
     {
 
         public string gesture;
-        public string score;
+        public int score;
         public List<string> gestures;
         public string playerName;
 
         public Player()
         {
-            int score = 0;
+
+            score = 0;
             gestures = new List<string>() {"rock", "paper", "scissors", "lizard", "spock" };
             
 
@@ -26,5 +28,6 @@ namespace RockPaperScisssorsLizzardSpock
 
         public abstract string SelectGesture();
         public abstract string PlayerName();
+        public abstract int AddScore();
     }
 }

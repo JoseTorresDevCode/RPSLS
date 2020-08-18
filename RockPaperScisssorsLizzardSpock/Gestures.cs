@@ -9,7 +9,7 @@ namespace RockPaperScisssorsLizzardSpock
     class Gestures
     {
         //Member Variables 
-        public string gesture;
+        
         
         
         //Constructor

@@ -11,9 +11,7 @@ namespace RockPaperScisssorsLizzardSpock
     class Human : Player
     {
         //Member Variables 
-        string playerName;
-
-
+        
         //Constructor
 
 
@@ -22,7 +20,7 @@ namespace RockPaperScisssorsLizzardSpock
         //Member Methods 
         public override string PlayerName()
         {
-            Console.WriteLine("Player One Name:?");
+            Console.WriteLine("Player Name:?");
             playerName = Console.ReadLine();
 
             return playerName;
@@ -33,9 +31,8 @@ namespace RockPaperScisssorsLizzardSpock
         {
             Console.WriteLine($"{playerName} please select a gesture");
             foreach (string gesture in gestures)
-            {
-                
-                Console.WriteLine(gesture);
+            {                
+                Console.WriteLine( $"choice:" + " " + gesture);
             }
             bool validChoice = false;
             while(validChoice == false) 
@@ -43,7 +40,7 @@ namespace RockPaperScisssorsLizzardSpock
                 gesture = Console.ReadLine();
                 if (gesture == "rock" || gesture == "scissors" || gesture == "paper" || gesture == "lizard" || gesture == "spock")
                 {
-                    validChoice = true;
+                    validChoice = true;                    
                     Console.WriteLine($"{playerName} chose:" + gesture);
                     
                 }
@@ -57,6 +54,23 @@ namespace RockPaperScisssorsLizzardSpock
 
         }
 
+        public override int AddScore()
+        {
+            
+            score++;
+            if(score >= 3)
+            {
+                Console.WriteLine($"{playerName}" + " " + "wins");
+                Console.ReadLine();
+                return score;
+            }
+            else
+            {
+                Console.WriteLine($"{playerName}'s score is: {score}");
+                Console.ReadLine();
+                return score;
+            }
+        }
 
 
         //public int MakeGesture(Player playerOneScore,  Player playerTwoScore)
